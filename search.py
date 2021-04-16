@@ -1,3 +1,5 @@
+import time
+start_time = time.time()
 def poisk(a, n): #итеративный подход
     first=0
     last=len(a)-1
@@ -28,3 +30,4 @@ print(poisk(a,n))
 first=0
 last=len(a)-1
 print(recursion_poisk(a, first, last))
+print("%s seconds " % (time.time() - start_time))
