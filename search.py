@@ -1,4 +1,4 @@
-def poisk(a, n):
+def poisk(a, n): #итеративный подход
     first=0
     last=len(a)-1
     mid=len(a)//2
@@ -12,7 +12,7 @@ def poisk(a, n):
         mid=(last+first)//2
     if first > last:
         return None
-def recursion_poisk(a, first, last):
+def recursion_poisk(a, first, last): #рекурсивный подход
     mid = (first+last) // 2
     while first!=last and first<=last:
         if element>a[mid]:
